@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngetPet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ee60d90fab11e0d28eb323ea61f7d5e747fd1e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24ef5f6a63fc194ead61508775eb5509ca403482")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngetPet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngetPet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
