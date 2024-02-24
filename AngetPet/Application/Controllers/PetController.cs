@@ -26,7 +26,7 @@ namespace AngetPet.Application.Controllers
             return Ok(pageable);
         }
 
-        [HttpPost("selector")]
+        [HttpGet("selector")]
         [Authorize]
         public async Task<IActionResult> Selector()
         {

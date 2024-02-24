@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AngetPet.Infraestructure.Migrations
 {
     /// <inheritdoc />
-    public partial class AngetpetMigration : Migration
+    public partial class AngetPetMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

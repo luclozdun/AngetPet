@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AngetPet.Infraestructure.Migrations
 {
     [DbContext(typeof(AngetpetDbContext))]
-    [Migration("20240216053708_AngetpetMigration")]
-    partial class AngetpetMigration
+    [Migration("20240224203729_AngetPetMigration")]
+    partial class AngetPetMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

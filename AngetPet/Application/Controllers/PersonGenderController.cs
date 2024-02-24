@@ -26,8 +26,7 @@ namespace AngetPet.Application.Controllers
             return Ok(pageable);
         }
 
-        [HttpPost("selector")]
-        [Authorize]
+        [HttpGet("selector")]
         public async Task<IActionResult> Selector()
         {
             var selector = await service.Selector(User);
