@@ -6,7 +6,7 @@ namespace AngetPet.Infraestructure.Repositories
 {
     public class Repository<T> : IRepository<T> where T : Entity
     {
-        private readonly AngetpetDbContext context;
+        protected readonly AngetpetDbContext context;
 
         public Repository(AngetpetDbContext context)
         {

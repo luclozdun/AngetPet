@@ -7,16 +7,16 @@ namespace AngetPet.Infraestructure
 {
     public class AngetpetDbContext : DbContext
     {
-        public DbSet<Animal> Animals { get; }
-        public DbSet<Gender> Genders { get; }
-        public DbSet<PersonGender> PersonGenders { get; }
-        public DbSet<Pet> Pets { get; }
-        public DbSet<PetSkill> PetsSkill { get; }
-        public DbSet<Role> Roles { get; }
-        public DbSet<Size> Sizes { get; }
-        public DbSet<Skill> Skills { get; }
-        public DbSet<User> Users { get; }
-        public DbSet<UserRole> UserRoles { get; }
+        public DbSet<Animal> Animals { get; set; }
+        public DbSet<Gender> Genders { get; set; }
+        public DbSet<PersonGender> PersonGenders { get; set; }
+        public DbSet<Pet> Pets { get; set; }
+        public DbSet<PetSkill> PetsSkill { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Size> Sizes { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
         public AngetpetDbContext(DbContextOptions<AngetpetDbContext> options) : base(options)
         {

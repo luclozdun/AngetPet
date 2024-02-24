@@ -9,3 +9,5 @@
 *.dll
 *.cache
 *.obj
+AngetPet/obj/*
+AngetPet/obj/Debug/net8.0/AngetPet.AssemblyInfo.cs
