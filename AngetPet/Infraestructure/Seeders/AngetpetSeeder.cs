@@ -7,7 +7,7 @@ namespace AngetPet.Infraestructure.Seeders
 {
     public class AngetpetSeeder
     {
-        public static void OnModelData(ModelBuilder builder)
+        public static void OnModelSeedData(ModelBuilder builder)
         {
             SeederRole(builder);
             SeederGender(builder);
@@ -34,9 +34,9 @@ namespace AngetPet.Infraestructure.Seeders
         private static void SeederPersonGender(ModelBuilder builder)
         {
             builder.Entity<PersonGender>().HasData(
-                new Gender { Id = 1, Name = "Masculino" },
-                new Gender { Id = 2, Name = "Femenino" },
-                new Gender { Id = 3, Name = "Prefiero no decir" }
+                new PersonGender { Id = 1, Name = "Masculino" },
+                new PersonGender { Id = 2, Name = "Femenino" },
+                new PersonGender { Id = 3, Name = "Prefiero no decir" }
                 );
         }
     }

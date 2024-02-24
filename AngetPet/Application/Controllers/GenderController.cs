@@ -42,7 +42,6 @@ namespace AngetPet.Application.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
             var response = await service.FindById(User, id);

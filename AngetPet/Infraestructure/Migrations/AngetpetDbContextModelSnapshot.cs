@@ -38,6 +38,18 @@ namespace AngetPet.Infraestructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "ADMIM"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "CUSTOMER"
+                        });
                 });
 
             modelBuilder.Entity("AngetPet.Domain.Models.Animal", b =>
@@ -81,6 +93,23 @@ namespace AngetPet.Infraestructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Genders", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Macho"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Hembra"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Sin Especificar"
+                        });
                 });
 
             modelBuilder.Entity("AngetPet.Domain.Models.PersonGender", b =>
@@ -99,6 +128,23 @@ namespace AngetPet.Infraestructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PersonGenders", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Masculino"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Femenino"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Prefiero no decir"
+                        });
                 });
 
             modelBuilder.Entity("AngetPet.Domain.Models.Pet", b =>

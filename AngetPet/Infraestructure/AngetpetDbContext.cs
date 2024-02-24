@@ -24,6 +24,8 @@ namespace AngetPet.Infraestructure
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
+
             builder.Entity<Animal>(x =>
             {
                 x.ToTable("Animals");
@@ -91,6 +93,7 @@ namespace AngetPet.Infraestructure
                 x.Property(x => x.ExpiredCodeRecover).HasColumnName("ExpiredCodeRecover");
                 x.Property(x => x.PersonGenderId).HasColumnName("PersonGenderId");
                 x.Property(x => x.CodeVerify).HasColumnName("CodeVerify");
+
                 x.Property(x => x.DateVerify).HasColumnName("DateVerify");
                 x.Property(x => x.ExpiredVerifyCode).HasColumnName("ExpiredVerifyCode");
                 x.HasOne(x => x.PersonGender)
@@ -147,7 +150,7 @@ namespace AngetPet.Infraestructure
                 .HasForeignKey(x => x.RoleId);
             });
 
-            //AngetpetSeeder.OnModelData(builder);
+            AngetpetSeeder.OnModelSeedData(builder);
         }
     }
 }

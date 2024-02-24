@@ -6,3 +6,6 @@
 *.vspscc
 *.vssscc
 *.vs
+*.dll
+*.cache
+*.obj

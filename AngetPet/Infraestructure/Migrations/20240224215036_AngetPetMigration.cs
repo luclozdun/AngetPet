@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace AngetPet.Infraestructure.Migrations
 {
     /// <inheritdoc />
@@ -223,6 +225,35 @@ namespace AngetPet.Infraestructure.Migrations
                         principalTable: "Skills",
                         principalColumn: "SkillId",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Genders",
+                columns: new[] { "GenderId", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Macho" },
+                    { 2, "Hembra" },
+                    { 3, "Sin Especificar" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "PersonGenders",
+                columns: new[] { "PersonGenderId", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Masculino" },
+                    { 2, "Femenino" },
+                    { 3, "Prefiero no decir" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Roles",
+                columns: new[] { "RoleId", "Name" },
+                values: new object[,]
+                {
+                    { 1, "ADMIM" },
+                    { 2, "CUSTOMER" }
                 });
 
             migrationBuilder.CreateIndex(
